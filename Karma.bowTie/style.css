@@ -3,6 +3,7 @@
 	padding: 0;
 	-webkit-user-select: none;
 }
+
 body {
 	margin: 0;
 	padding: 0;
@@ -13,9 +14,11 @@ body {
 	overflow: hidden;
 	text-overflow: ellipsis;
 }
+
 img {
 	display: block;
 }
+
 #container {
 	position: absolute;
 	top: 0px;
@@ -24,6 +27,7 @@ img {
 	background-color: rgba(0,0,0, 0.2);
 	-webkit-border-radius: 6px;
 }
+
 #artBox {
 	width: 90px;
 	height: 90px;
@@ -33,15 +37,18 @@ img {
 	border: 0;
 	background: rgba(0,0,0,0.3);
 }
+
 #artBox:hover #controls {
 	display: block;
 }
+
 #art {
 	position: absolute;
 	height: 90px;
 	width: 90px;
 	border: 0;
 }
+
 #controls {
 	display: none;
 	position: absolute;
@@ -51,32 +58,40 @@ img {
 	list-style-type: none;
 	margin: 0;
 }
+
 #controls li {
 	float: left;
 	margin-right: 4px;
 }
+
 #controls li a {
 	margin: 0;
 	padding: 0;
 }
+
 #prev, #next, #playLink {
 	display: inline-block;
 	width: 26px;
 	height: 16px;
 	background: url('buttons.png') no-repeat;
 }
+
 #playLink {
 	width: 23px;
 }
+
 #playLink.pause {
 	background-position: -22px 0;
 }
+
 #prev {
 	background-position: -44px 0;
 }
+
 #next {
 	background-position: -70px 0;
 }
+
 #text {
 	position: absolute;
 	top: 9px;
@@ -84,12 +99,14 @@ img {
 	text-align: left;
 	width: 200px;
 }
+
 #text p, #time, #rating {
 	white-space: nowrap;
 	text-overflow: ellipsis;
 	overflow: hidden;
 	text-shadow: #000 0px 1px 1px;
 }
+
 #album {
 	position: relative;
 	top: -2px;
@@ -98,6 +115,7 @@ img {
 	color: #ddd;
 	-webkit-opacity: 0.99;
 }
+
 #artist {
 	position: relative;
 	top: -4px;
@@ -107,6 +125,7 @@ img {
 	-webkit-opacity: 0.99;
 	font-weight: normal;
 }
+
 #length {
 	width: 100%;
 	height: 6px;
@@ -114,6 +133,7 @@ img {
 	margin: 3px 0 6px;
 	background-color: #666;
 }
+
 #progress {
 	height: 6px;
 	min-width: 6px;
@@ -122,19 +142,23 @@ img {
 	-webkit-border-radius: 3px;
 	background-color: #ddd;
 }
+
 #time {
 	clear: left;
 	-webkit-opacity: 0.99;
 }
+
 #time_total {
 	display: none;
 }
+
 #rating {
 	font-weight: normal;
 	margin-top: -2px;
 	float: right;
 	-webkit-opacity: 0.99;
 }
+
 #rating a {
 	width: 1em;
 	height: 1em;
