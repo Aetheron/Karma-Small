@@ -1,7 +1,15 @@
-Karma.bowTie
+Karma-Small.bowtie
 ============
+<https://github.com/carlosgaldino/Karma-Small>
+
+![Preview](https://github.com/carlosgaldino/Karma-Small/raw/master/Karma-Small.bowtie/preview.png)
 
 Theme for the [Bowtie](http://bowtieapp.com/) iTunes controller
+
+This is basically the same theme created by [Matt Sephton](http://www.gingerbeardman.com/).
+The difference is its size, this one is smaller.
+
+You can find the original theme [here](https://github.com/gingerbeardman/Karma.bowTie).
 
 ## License
 
