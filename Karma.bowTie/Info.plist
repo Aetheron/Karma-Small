@@ -5,17 +5,17 @@
 	<key>BTArtworkFunction</key>
 	<string>artworkUpdate</string>
 	<key>BTArtworkHeight</key>
-	<integer>128</integer>
+	<integer>90</integer>
 	<key>BTArtworkWidth</key>
-	<integer>128</integer>
+	<integer>90</integer>
 	<key>BTMainFile</key>
 	<string>index.html</string>
 	<key>BTStatusFunction</key>
 	<string>playerUpdate</string>
 	<key>BTThemeArtist</key>
-	<string>Matt Sephton</string>
+	<string>Carlos Galdino</string>
 	<key>BTThemeIdentifier</key>
-	<string>com.gingerbeardman.karma</string>
+	<string>com.codecleaning.karma</string>
 	<key>BTThemeName</key>
 	<string>Karma</string>
 	<key>BTThemePreviewImage</key>
@@ -23,12 +23,12 @@
 	<key>BTTrackFunction</key>
 	<string>trackUpdate</string>
 	<key>BTWindowHeight</key>
-	<integer>148</integer>
+	<integer>104</integer>
 	<key>BTWindowMode</key>
 	<string>top</string>
 	<key>BTWindowWidth</key>
-	<integer>560</integer>
+	<integer>314</integer>
 	<key>BTThemeVersion</key>
-	<string>1.1</string>
+	<string>1.0</string>
 </dict>
 </plist>
