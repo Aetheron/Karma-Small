@@ -45,9 +45,9 @@ img {
 #controls {
 	display: none;
 	position: absolute;
-	left: 7px;
+	left: 4px;
 	bottom: 0;
-	width: 128px;
+	width: 96px;
 	list-style-type: none;
 	margin: 0;
 }
@@ -61,21 +61,21 @@ img {
 }
 #prev, #next, #playLink {
 	display: inline-block;
-	width: 37px;
-	height: 24px;
+	width: 26px;
+	height: 16px;
 	background: url('buttons.png') no-repeat;
 }
 #playLink {
-	width: 32px;
+	width: 23px;
 }
 #playLink.pause {
-	background-position: -32px 0;
+	background-position: -22px 0;
 }
 #prev {
-	background-position: -64px 0;
+	background-position: -44px 0;
 }
 #next {
-	background-position: -101px 0;
+	background-position: -70px 0;
 }
 #text {
 	position: absolute;
