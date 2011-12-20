@@ -7,7 +7,8 @@ Karma-Small.bowtie
 Theme for the [Bowtie](http://bowtieapp.com/) iTunes controller
 
 This is basically the same theme created by [Matt Sephton](http://www.gingerbeardman.com/).
-The difference is its size, this one is smaller.
+The difference is its size, this one is smaller. In this version you can
+also toggle a countdown timer by clicking the timer.
 
 You can find the original theme [here](https://github.com/gingerbeardman/Karma.bowTie).
 

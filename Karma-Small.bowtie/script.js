@@ -1,4 +1,5 @@
-oldPlayState = 0;
+var oldPlayState = 0;
+var countdown = false;
 
 function $(el) { return document.getElementById(el); }
 function trackUpdate(track)
@@ -36,7 +37,13 @@ function playerUpdate()
 	
 	$('progress').style.width = Math.ceil((iTunes.playerPosition() / currentTrack.property('length'))*100) + "%";
 
-	$('time_current').innerHTML = secToString(iTunes.playerPosition()) || "00:00";
+  var time = iTunes.playerPosition();
+  if (countdown) {
+    var totalLength = currentTrack.length;
+    time = totalLength - time;
+  }
+
+  $('time_current').innerHTML = secToString(time) || "00:00";
 	
 	updateRatingUI(iTunes.rating());
 }
@@ -104,6 +111,12 @@ function secToString(time)
 	
 	if(min < 10) min = "0" + min;
 	if(sec < 10) sec = "0" + sec;
-	
+
+  if (countdown) min = "-" + min;
+
 	return min + ":" + sec;
+}
+
+function toggleCountdown() {
+  countdown = !countdown;
 }
