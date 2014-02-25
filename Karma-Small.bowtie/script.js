@@ -1,5 +1,6 @@
 var oldPlayState = 0;
 var countdown = false;
+var currentTrack = "";
 
 function $(el) { return document.getElementById(el); }
 function trackUpdate(track)
@@ -12,7 +13,7 @@ function trackUpdate(track)
 	
 	currentTrack = track;
 
-	updateRatingUI(iTunes.rating());
+	updateRatingUI(Player.rating());
 }
 function artworkUpdate(artURL)
 {
@@ -24,7 +25,7 @@ function artworkUpdate(artURL)
 }
 function playerUpdate()
 {
-	var pState = iTunes.playState();
+	var pState = Player.playState();
 	if (pState != oldPlayState)
 	{
 		if (pState == 0 || pState == 2)
@@ -35,9 +36,10 @@ function playerUpdate()
 		oldPlayState = pState;
 	}
 	
-	$('progress').style.width = Math.ceil((iTunes.playerPosition() / currentTrack.property('length'))*100) + "%";
+	$('progress').style.width = Math.ceil((Player.playerPosition() / currentTrack.property('length'))*100) + "%";
+    
 
-  var time = iTunes.playerPosition();
+  var time = Player.playerPosition();
   if (countdown) {
     var totalLength = currentTrack.length;
     time = totalLength - time;
@@ -45,18 +47,18 @@ function playerUpdate()
 
   $('time_current').innerHTML = secToString(time) || "00:00";
 	
-	updateRatingUI(iTunes.rating());
+	updateRatingUI(Player.rating());
 }
 function playPause()
 {
-	iTunes.playPause();
+	Player.playPause();
 	playerUpdate();
 }
 
 function setRating(rating)
 {
 	updateRatingUI(rating);
-	iTunes.setRating(rating);
+	Player.setRating(rating);
 }
 
 function updateRatingUI(rating)

@@ -13,7 +13,7 @@
 	<key>BTStatusFunction</key>
 	<string>playerUpdate</string>
 	<key>BTThemeArtist</key>
-	<string>Carlos Galdino</string>
+	<string>Carlos Galdino and Bob VanLonkhuyzen</string>
 	<key>BTThemeIdentifier</key>
 	<string>com.codecleaning.karma</string>
 	<key>BTThemeName</key>
@@ -29,6 +29,6 @@
 	<key>BTWindowWidth</key>
 	<integer>314</integer>
 	<key>BTThemeVersion</key>
-	<string>1.0</string>
+	<string>1.1</string>
 </dict>
 </plist>
